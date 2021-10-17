@@ -1,0 +1,6 @@
+{:paths ["src"]
+ :deps {org.suskalo/coffi {:mvn/version "0.2.259"}
+        io.github.IGJoshua/coffi {:git/tag "v0.2.259" :git/sha "ee5805c"}}
+ :aliases {:run {:jvm-opts ["--add-modules=jdk.incubator.foreign"
+                            "--enable-native-access=ALL-UNNAMED"
+                            #_"-Djava.library.path=/System/Library/Frameworks"]}}}
